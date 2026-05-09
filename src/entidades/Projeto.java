@@ -1,6 +1,7 @@
 package entidades;
-
 import java.time.LocalDate;
+
+import enums.StatusProjeto;
 
 public class Projeto {
     private long id;
@@ -9,8 +10,13 @@ public class Projeto {
     private LocalDate datainicio;
     private LocalDate dataConclusao;
     private Usuario responsavel;
+    private StatusProjeto status;
 
     public Projeto() {
+    }
+
+    public Projeto(StatusProjeto status) {
+        this.status = status;
     }
 
     public Projeto(long id, String nome, String descricao, LocalDate datainicio, LocalDate dataConclusao,
@@ -69,6 +75,14 @@ public class Projeto {
 
     public void setResponsavel(Usuario responsavel) {
         this.responsavel = responsavel;
+    }
+
+    public StatusProjeto getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusProjeto status) {
+        this.status = status;
     }
 
 }

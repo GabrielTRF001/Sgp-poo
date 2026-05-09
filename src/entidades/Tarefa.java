@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import enums.PrioridadeTarefa;
 import enums.StatusTarefa;
 
-public class Tarefas {
+public class Tarefa {
     private long id;
     private String titulo;
     private String descricao;
@@ -17,10 +17,10 @@ public class Tarefas {
     private Usuario usuario;
     private Projeto projeto;
 
-    public Tarefas() {
+    public Tarefa() {
     }
 
-    public Tarefas(long id, String titulo, String descricao, LocalDate dataCriacao, LocalDate dataConclusao,
+    public Tarefa(long id, String titulo, String descricao, LocalDate dataCriacao, LocalDate dataConclusao,
             PrioridadeTarefa prioridade, StatusTarefa status, Usuario usuario, Projeto projeto) {
         this.id = id;
         this.titulo = titulo;
