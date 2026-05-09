@@ -1,5 +1,7 @@
 package entidades;
 
+import java.time.LocalDateTime;
+
 import enums.StatusUsuario;
 
 public class Usuario {
@@ -8,7 +10,7 @@ public class Usuario {
     private String cpf;
     private String email;
     private String senha;
-    private LocalDate dataNascimento;
+    private LocalDateTime dataNascimento;
     private StatusUsuario status;
 
     public Usuario() {
@@ -65,11 +67,11 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public LocalDate getDataNascimento() {
+    public LocalDateTime getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(LocalDateTime dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

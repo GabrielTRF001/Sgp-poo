@@ -1,3 +1,4 @@
+package entidades;
 import enums.PrioridadeTarefa;
 
 import java.time.LocalDate;
