@@ -1,9 +1,6 @@
 package entidades;
 import enums.PrioridadeTarefa;
-
 import java.time.LocalDate;
-
-import enums.PrioridadeTarefa;
 import enums.StatusTarefa;
 
 public class Tarefa {
