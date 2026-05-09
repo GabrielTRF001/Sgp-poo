@@ -11,6 +11,9 @@ public class Usuario {
     private LocalDate dataNascimento;
     private StatusUsuario status;
 
+    public Usuario() {
+    }
+
     public Usuario(long id, String nome, String cpf, String email, String senha, LocalDate dataNascimento,
             StatusUsuario status) {
         this.id = id;

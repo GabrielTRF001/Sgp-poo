@@ -1,9 +1,10 @@
-import enuns.PrioridadeTarefa.java;
+import enums.PrioridadeTarefa;
 
 import java.time.LocalDate;
 
 import enums.PrioridadeTarefa;
-import enuns.StatusTarefa;
+import enums.StatusTarefa;
+
 public class Tarefas {
     private long id;
     private String titulo;
@@ -14,8 +15,10 @@ public class Tarefas {
     private StatusTarefa status;
     private Usuario usuario;
     private Projeto projeto;
-    public Tarefas(){
+
+    public Tarefas() {
     }
+
     public Tarefas(long id, String titulo, String descricao, LocalDate dataCriacao, LocalDate dataConclusao,
             PrioridadeTarefa prioridade, StatusTarefa status, Usuario usuario, Projeto projeto) {
         this.id = id;
@@ -28,59 +31,77 @@ public class Tarefas {
         this.usuario = usuario;
         this.projeto = projeto;
     }
+
     public long getId() {
         return id;
     }
+
     public void setId(long id) {
         this.id = id;
     }
+
     public String getTitulo() {
         return titulo;
     }
+
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
     public String getDescricao() {
         return descricao;
     }
+
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
     public LocalDate getDataCriacao() {
         return dataCriacao;
     }
+
     public void setDataCriacao(LocalDate dataCriacao) {
         this.dataCriacao = dataCriacao;
     }
+
     public LocalDate getDataConclusao() {
         return dataConclusao;
     }
+
     public void setDataConclusao(LocalDate dataConclusao) {
         this.dataConclusao = dataConclusao;
     }
+
     public PrioridadeTarefa getPrioridade() {
         return prioridade;
     }
+
     public void setPrioridade(PrioridadeTarefa prioridade) {
         this.prioridade = prioridade;
     }
+
     public StatusTarefa getStatus() {
         return status;
     }
+
     public void setStatus(StatusTarefa status) {
         this.status = status;
     }
+
     public Usuario getUsuario() {
         return usuario;
     }
+
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
     public Projeto getProjeto() {
         return projeto;
     }
+
     public void setProjeto(Projeto projeto) {
         this.projeto = projeto;
     }
-    
+
 }
